@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         // Elemento - View All
                         Container(
-                          margin: EdgeInsets.only(left: 900),
+                          margin: EdgeInsets.only(left: 980),
                           // Posição X - 108 (Best Sellers)
                           width: 102,
                           height: 40,
@@ -107,6 +107,58 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 100),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Container(
+                                margin: const EdgeInsets.only(left: 108),
+                                width: 1224,
+                                height: 546,
+                                color: Colors.white,
+                                child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Expanded(
+                                        child: Container(
+                                            width: 392,
+                                            height: 540,
+                                            color: Colors.grey[600],
+                                            child: const Placeholder(
+                                              color: Colors.red,
+                                            )),
+                                      ),
+                                      Expanded(
+                                        child: Container(
+                                            width: 392,
+                                            height: 540,
+                                            color: Colors.grey[600],
+                                            child: const Placeholder(
+                                              color: Colors.red,
+                                            )),
+                                      ),
+                                      Expanded(
+                                        child: Container(
+                                            width: 392,
+                                            height: 540,
+                                            color: Colors.grey[600],
+                                            child: const Placeholder(
+                                              color: Colors.red,
+                                            )),
+                                      ),
+                                    ]),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
