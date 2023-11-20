@@ -11,42 +11,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demossss',
+      title: 'Flutter Mateus',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Mateus'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
-
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
 
   final String title;
 
@@ -59,40 +35,82 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Tela de testes do Figma'),
+        ),
         backgroundColor: Colors.grey[800],
-        body: SingleChildScrollView(
-          child: Container(
-            width: 1440,
-            height: 5626,
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                // Widgets do lado esquerdo da Row aqui...
-                Expanded(
-                  child: Column(
+        body: ListView(
+          children: [
+            Container(
+              width: 1440,
+              height: 5626,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Padding(
-                        padding: EdgeInsets.only(
-                            top: 110), // Padding de 110 acima do Placeholder
-                        child: Container(
-                          width: 1440,
-                          height: 600,
-                          color: Colors.grey[700],
-                          child: Placeholder(
-                            color: Colors.white70,
-                          ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 110),
+                              child: Container(
+                                width: 1440,
+                                height: 600,
+                                color: Colors.grey[700],
+                                child: const Placeholder(
+                                  color: Colors.white70,
+                                ),
+                              ),
+                            ),
+                            // Seus outros widgets aqui...
+                          ],
                         ),
                       ),
-                      // Seus outros widgets aqui...
+                      // Widgets do lado direito da Row aqui...
                     ],
                   ),
-                ),
-                // Widgets do lado direito da Row aqui...
-              ],
+                  Padding(
+                    padding: const EdgeInsets.only(top: 88),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // Elemento branco
+                        Container(
+                          margin: const EdgeInsets.only(left: 108),
+                          width: 208,
+                          height: 45,
+                          child: const Text(
+                            'Best Sellers',
+                            style: TextStyle(fontSize: 16, color: Colors.white),
+                          ),
+                        ),
+                        // Elemento - View All
+                        Container(
+                          margin: EdgeInsets.only(left: 900),
+                          // Posição X - 108 (Best Sellers)
+                          width: 102,
+                          height: 40,
+                          child: const Center(
+                            child: Text(
+                              'View All',
+                              style: TextStyle(
+                                fontSize: 16,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
-          ),
+          ],
         ),
       ),
     );
