@@ -133,6 +133,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                               color: Colors.red,
                                             )),
                                       ),
+                                      const SizedBox(
+                                          width:
+                                              20), // Espaçamento entre os elementos
+
                                       Expanded(
                                         child: Container(
                                             width: 392,
@@ -142,6 +146,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                               color: Colors.red,
                                             )),
                                       ),
+                                      const SizedBox(
+                                          width:
+                                              20), // Espaçamento entre os elementos
+
                                       Expanded(
                                         child: Container(
                                             width: 392,
