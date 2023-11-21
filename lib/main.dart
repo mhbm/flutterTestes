@@ -245,6 +245,76 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ],
                   ),
+                  const Padding(
+                    padding: EdgeInsets.fromLTRB(158, 88, 0, 0),
+                    child: Text(
+                      "Modiweek",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(158, 28, 0, 0),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 1228,
+                          height: 493,
+                          color: Colors.grey[500],
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      width: 280,
+                                      height: 493,
+                                      color: Colors.grey[300],
+                                      child: const Placeholder(
+                                          color: Colors.amber),
+                                    ),
+                                    SizedBox(
+                                        width:
+                                            30), // Espaçamento entre os elementos
+                                    Container(
+                                      width: 280,
+                                      height: 493,
+                                      color: Colors.grey[300],
+                                      child: const Placeholder(
+                                          color: Colors.amber),
+                                    ),
+                                    SizedBox(
+                                        width:
+                                            30), // Espaçamento entre os elementos
+                                    Container(
+                                      width: 280,
+                                      height: 493,
+                                      color: Colors.grey[300],
+                                      child: const Placeholder(
+                                          color: Colors.amber),
+                                    ),
+                                    SizedBox(
+                                        width:
+                                            30), // Espaçamento entre os elementos
+                                    Container(
+                                      width: 280,
+                                      height: 493,
+                                      color: Colors.grey[300],
+                                      child: const Placeholder(
+                                          color: Colors.amber),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
                 ],
               ),
             ),
