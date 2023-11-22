@@ -52,23 +52,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.only(top: 110),
-                              child: Container(
-                                width: 1440,
-                                height: 600,
-                                color: Colors.grey[700],
-                                child: const Placeholder(
-                                  color: Colors.white70,
-                                ),
-                              ),
+                        child: Padding(
+                          padding: EdgeInsets.only(top: 110),
+                          child: Container(
+                            color: Colors.grey[700],
+                            child: const Placeholder(
+                              color: Colors.white70,
                             ),
-                            // Seus outros widgets aqui...
-                          ],
+                          ),
                         ),
+                        // Seus outros widgets aqui...
                       ),
                       // Widgets do lado direito da Row aqui...
                     ],
@@ -117,7 +110,8 @@ class _MyHomePageState extends State<MyHomePage> {
                             children: [
                               Container(
                                 margin: const EdgeInsets.only(left: 108),
-                                width: 1224,
+                                width:
+                                    1224, //PRECISA SER A PAGINA ITNEIRA. A MARGEM PRECISA SER CORRETA
                                 height: 546,
                                 color: Colors.white,
                                 child: Row(
@@ -276,7 +270,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       child: const Placeholder(
                                           color: Colors.amber),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                         width:
                                             30), // Espaçamento entre os elementos
                                     Container(
@@ -286,7 +280,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       child: const Placeholder(
                                           color: Colors.amber),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                         width:
                                             30), // Espaçamento entre os elementos
                                     Container(
@@ -296,7 +290,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       child: const Placeholder(
                                           color: Colors.amber),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                         width:
                                             30), // Espaçamento entre os elementos
                                     Container(
@@ -314,7 +308,33 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(top: 50),
+                              child: Container(
+                                width: 1440,
+                                height: 526,
+                                color: Colors.grey[300],
+                                child: const Placeholder(
+                                  color: Colors.white70,
+                                ),
+                              ),
+                            ),
+                            // Seus outros widgets aqui...
+                          ],
+                        ),
+                      ),
+                      // Widgets do lado direito da Row aqui...
+                    ],
+                  ),
                 ],
               ),
             ),
@@ -324,3 +344,6 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
+
+//TODO - verificar o colleiction o FLEXIBLE
