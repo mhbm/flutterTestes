@@ -75,8 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           flex: 1,
                           fit: FlexFit.tight,
                           child: Container(
-                            margin: EdgeInsets.only(
-                                left: 0.05 * MediaQuery.of(context).size.width),
+                            margin: EdgeInsets.only(left: 108),
                             width: 208,
                             height: 45,
                             child: const Text(
@@ -90,9 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           flex: 0,
                           fit: FlexFit.tight,
                           child: Container(
-                            margin: EdgeInsets.only(
-                                right:
-                                    0.05 * MediaQuery.of(context).size.width),
+                            margin: EdgeInsets.only(right: 108),
                             width: 102,
                             height: 45,
                             child: const Text(
@@ -106,66 +103,53 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 69),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Expanded(
-                          child: Column(
-                            children: [
-                              Container(
-                                margin: const EdgeInsets.only(left: 108),
-                                width:
-                                    1224, //PRECISA SER A PAGINA ITNEIRA. A MARGEM PRECISA SER CORRETA
-                                height: 546,
-                                color: Colors.white,
-                                child: Row(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceBetween,
-                                    children: [
-                                      Expanded(
-                                        child: Container(
-                                            width: 392,
-                                            height: 540,
-                                            color: Colors.grey[600],
-                                            child: const Placeholder(
-                                              color: Colors.red,
-                                            )),
-                                      ),
-                                      const SizedBox(
-                                          width:
-                                              20), // Espaçamento entre os elementos
+                      padding: const EdgeInsets.only(top: 69),
+                      child: Expanded(
+                        child: Container(
+                          margin: const EdgeInsets.only(left: 108, right: 148),
+                          height: 546,
+                          color: Colors.white,
+                          child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                      width: 392,
+                                      height: 540,
+                                      color: Colors.grey[600],
+                                      child: const Placeholder(
+                                        color: Colors.red,
+                                      )),
+                                ),
+                                const SizedBox(
+                                    width:
+                                        20), // Espaçamento entre os elementos
 
-                                      Expanded(
-                                        child: Container(
-                                            width: 392,
-                                            height: 540,
-                                            color: Colors.grey[600],
-                                            child: const Placeholder(
-                                              color: Colors.red,
-                                            )),
-                                      ),
-                                      const SizedBox(
-                                          width:
-                                              20), // Espaçamento entre os elementos
+                                Expanded(
+                                  child: Container(
+                                      width: 392,
+                                      height: 540,
+                                      color: Colors.grey[600],
+                                      child: const Placeholder(
+                                        color: Colors.red,
+                                      )),
+                                ),
+                                const SizedBox(
+                                    width:
+                                        20), // Espaçamento entre os elementos
 
-                                      Expanded(
-                                        child: Container(
-                                            width: 392,
-                                            height: 540,
-                                            color: Colors.grey[600],
-                                            child: const Placeholder(
-                                              color: Colors.red,
-                                            )),
-                                      ),
-                                    ]),
-                              ),
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
+                                Expanded(
+                                  child: Container(
+                                      width: 392,
+                                      height: 540,
+                                      color: Colors.grey[600],
+                                      child: const Placeholder(
+                                        color: Colors.red,
+                                      )),
+                                ),
+                              ]),
+                        ),
+                      )),
                   const Padding(
                     padding: EdgeInsets.fromLTRB(158, 88, 0, 0),
                     child: Text(
