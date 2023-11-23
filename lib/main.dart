@@ -151,7 +151,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       )),
                   const Padding(
-                    padding: EdgeInsets.fromLTRB(158, 88, 0, 0),
+                    padding: EdgeInsets.only(left: 108, top: 88),
                     child: Text(
                       "Collection",
                       style: TextStyle(
