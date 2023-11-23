@@ -75,7 +75,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           flex: 1,
                           fit: FlexFit.tight,
                           child: Container(
-                            margin:  EdgeInsets.only(left: 0.16 * MediaQuery.of(context).size.width),
+                            margin: EdgeInsets.only(
+                                left: 0.05 * MediaQuery.of(context).size.width),
                             width: 208,
                             height: 45,
                             child: const Text(
@@ -89,7 +90,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           flex: 0,
                           fit: FlexFit.tight,
                           child: Container(
-                            margin:  EdgeInsets.only(right: 0.16 * MediaQuery.of(context).size.width),
+                            margin: EdgeInsets.only(
+                                right:
+                                    0.05 * MediaQuery.of(context).size.width),
                             width: 102,
                             height: 45,
                             child: const Text(
@@ -103,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 100),
+                    padding: const EdgeInsets.only(top: 69),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
