@@ -61,39 +61,41 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                         ),
-                        // Seus outros widgets aqui...
                       ),
-                      // Widgets do lado direito da Row aqui...
                     ],
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 88),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        // Elemento branco
-                        Container(
-                          margin: const EdgeInsets.only(left: 108),
-                          width: 208,
-                          height: 45,
-                          child: const Text(
-                            'Best Sellers',
-                            style: TextStyle(fontSize: 16, color: Colors.white),
+                        // Elemento branco à esquerda
+                        Flexible(
+                          flex: 1,
+                          fit: FlexFit.tight,
+                          child: Container(
+                            margin: const EdgeInsets.only(left: 108),
+                            width: 208,
+                            height: 45,
+                            child: const Text(
+                              'Best Sellers',
+                              style:
+                                  TextStyle(fontSize: 16, color: Colors.white),
+                            ),
                           ),
                         ),
-                        // Elemento - View All
-                        Container(
-                          margin: EdgeInsets.only(left: 980),
-                          // Posição X - 108 (Best Sellers)
-                          width: 102,
-                          height: 40,
-                          child: const Center(
-                            child: Text(
-                              'View All',
-                              style: TextStyle(
-                                fontSize: 16,
-                                color: Colors.white,
-                              ),
+                        Flexible(
+                          flex: 0,
+                          fit: FlexFit.tight,
+                          child: Container(
+                            margin: const EdgeInsets.only(right: 220),
+                            width: 102,
+                            height: 45,
+                            child: const Text(
+                              'View all',
+                              style:
+                                  TextStyle(fontSize: 16, color: Colors.white),
                             ),
                           ),
                         ),
