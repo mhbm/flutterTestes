@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           flex: 1,
                           fit: FlexFit.tight,
                           child: Container(
-                            margin: const EdgeInsets.only(left: 108),
+                            margin:  EdgeInsets.only(left: 0.16 * MediaQuery.of(context).size.width),
                             width: 208,
                             height: 45,
                             child: const Text(
@@ -89,7 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           flex: 0,
                           fit: FlexFit.tight,
                           child: Container(
-                            margin: const EdgeInsets.only(right: 220),
+                            margin:  EdgeInsets.only(right: 0.16 * MediaQuery.of(context).size.width),
                             width: 102,
                             height: 45,
                             child: const Text(
