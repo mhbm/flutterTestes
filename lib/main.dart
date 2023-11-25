@@ -160,74 +160,77 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                   ),
-                  Row(
-                    children: [
-                      Container(
-                        margin: const EdgeInsets.only(left: 158, top: 38),
-                        width: 1224,
-                        height: 1435,
-                        color: Colors.white,
-                        child: Padding(
-                          padding: const EdgeInsets.all(
-                              8.0), // Ajuste o padding conforme necessário
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
+                  Padding(
+                      padding: const EdgeInsets.only(top: 69),
+                      child: Expanded(
+                        child: Container(
+                            margin: const EdgeInsets.only(left: 108),
+                            width: 1224,
+                            height: 1435,
+                            color: Colors.white,
+                            child: Padding(
+                              padding: const EdgeInsets.all(
+                                  8.0), // Ajuste o padding conforme necessário
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
-                                  Container(
-                                    width: 600,
-                                    height: 518,
-                                    color: Colors.grey[300],
-                                    child: const Placeholder(color: Colors.red),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        width: 600,
+                                        height: 518,
+                                        color: Colors.grey[300],
+                                        child: const Placeholder(
+                                            color: Colors.red),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            top:
+                                                64), // Espaçamento entre os elementos
+                                        child: Container(
+                                          width: 600,
+                                          height: 837,
+                                          color: Colors.grey[300],
+                                          child: const Placeholder(
+                                              color: Colors.blue),
+                                        ),
+                                      ),
+                                    ],
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                        top:
-                                            64), // Espaçamento entre os elementos
-                                    child: Container(
-                                      width: 600,
-                                      height: 837,
-                                      color: Colors.grey[300],
-                                      child:
-                                          const Placeholder(color: Colors.blue),
-                                    ),
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        width: 600,
+                                        height: 920,
+                                        color: Colors.grey[300],
+                                        child: const Placeholder(
+                                            color: Colors.green),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            top:
+                                                64), // Espaçamento entre os elementos
+                                        child: Container(
+                                          width: 600,
+                                          height: 435,
+                                          color: Colors.grey[300],
+                                          child: const Placeholder(
+                                              color: Colors.orange),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ],
                               ),
-                              Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Container(
-                                    width: 600,
-                                    height: 920,
-                                    color: Colors.grey[300],
-                                    child:
-                                        const Placeholder(color: Colors.green),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.only(
-                                        top:
-                                            64), // Espaçamento entre os elementos
-                                    child: Container(
-                                      width: 600,
-                                      height: 435,
-                                      color: Colors.grey[300],
-                                      child: const Placeholder(
-                                          color: Colors.orange),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+                            )),
+                      )),
                   const Padding(
                     padding: EdgeInsets.fromLTRB(158, 88, 0, 0),
                     child: Text(
@@ -303,25 +306,16 @@ class _MyHomePageState extends State<MyHomePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.only(top: 50),
-                              child: Container(
-                                width: 1440,
-                                height: 526,
-                                color: Colors.grey[300],
-                                child: const Placeholder(
-                                  color: Colors.white70,
-                                ),
-                              ),
+                        child: Padding(
+                          padding: EdgeInsets.only(top: 50),
+                          child: Container(
+                            color: Colors.grey[300],
+                            child: const Placeholder(
+                              color: Colors.white70,
                             ),
-                            // Seus outros widgets aqui...
-                          ],
+                          ),
                         ),
                       ),
-                      // Widgets do lado direito da Row aqui...
                     ],
                   ),
                 ],
