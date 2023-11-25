@@ -301,22 +301,119 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                   ),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding: EdgeInsets.only(top: 50),
+                  const Padding(
+                    padding: EdgeInsets.fromLTRB(108, 88, 0, 0),
+                    child: Text(
+                      "Follow US @Modimal",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(left: 108, right: 108, top: 58),
+                    child: Row(
+                      children: <Widget>[
+                        Expanded(
                           child: Container(
-                            color: Colors.grey[300],
-                            child: const Placeholder(
-                              color: Colors.white70,
-                            ),
+                            color: Colors.blue,
+                            height: 751,
+                            child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.stretch,
+                                children: [
+                                  // Primeira coluna com o dobro do tamanho
+                                  Expanded(
+                                    flex: 2,
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.stretch,
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+                                            color: Colors.blue,
+                                            child: Center(
+                                              child: Text(
+                                                'Coluna 1 (Dobro)',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.stretch,
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+                                            color: Colors.green,
+                                            child: Center(
+                                              child: Text(
+                                                'Coluna 2',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            color: Colors.orange,
+                                            child: Center(
+                                              child: Text(
+                                                'Coluna 2',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.stretch,
+                                      children: [
+                                        Expanded(
+                                          child: Container(
+                                            color: Colors.cyan,
+                                            child: Center(
+                                              child: Text(
+                                                'Coluna 3',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Container(
+                                            color: Colors.purple,
+                                            child: Center(
+                                              child: Text(
+                                                'Coluna 3',
+                                                style: TextStyle(
+                                                    color: Colors.white),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ]),
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ],
               ),
@@ -327,6 +424,5 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
 
 //TODO - verificar o colleiction o FLEXIBLE
