@@ -161,76 +161,94 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Padding(
-                      padding: const EdgeInsets.only(top: 69),
-                      child: Expanded(
-                        child: Container(
-                            margin: const EdgeInsets.only(left: 108),
-                            width: 1224,
-                            height: 1435,
-                            color: Colors.white,
-                            child: Padding(
-                              padding: const EdgeInsets.all(
-                                  8.0), // Ajuste o padding conforme necessário
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Column(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                    padding:
+                        const EdgeInsets.only(top: 69, left: 108, right: 148),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Container(
+                            height: 1419,
+                            color: Colors.grey[600],
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Expanded(
+                                  flex: 1,
+                                  child: Column(
                                     children: [
-                                      Container(
-                                        width: 600,
-                                        height: 518,
-                                        color: Colors.grey[300],
-                                        child: const Placeholder(
-                                            color: Colors.red),
+                                      Expanded(
+                                        flex: 1,
+                                        child: Column(
+                                          children: [
+                                            Expanded(
+                                              child: Container(
+                                                color: Colors.blue,
+                                                child: Expanded(
+                                                  child: Container(
+                                                    alignment:
+                                                        Alignment.bottomRight,
+                                                    padding:
+                                                        const EdgeInsets.only(
+                                                      bottom: 30,
+                                                      right: 100,
+                                                    ),
+                                                    child: const Text(
+                                                      'Elemento',
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                        backgroundColor:
+                                                            Colors.black,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(
-                                            top:
-                                                64), // Espaçamento entre os elementos
-                                        child: Container(
-                                          width: 600,
-                                          height: 837,
-                                          color: Colors.grey[300],
-                                          child: const Placeholder(
-                                              color: Colors.blue),
+                                      SizedBox(height: 80),
+                                      Expanded(
+                                        flex: 2,
+                                        child: Column(
+                                          children: [
+                                            Expanded(
+                                              child: Container(
+                                                color: Colors.green,
+                                                child: Expanded(
+                                                  child: Container(
+                                                    alignment:
+                                                        Alignment.bottomRight,
+                                                    padding:
+                                                        const EdgeInsets.only(
+                                                      bottom: 30,
+                                                      right: 100,
+                                                    ),
+                                                    child: const Text(
+                                                      'Elemento',
+                                                      style: TextStyle(
+                                                        color: Colors.white,
+                                                        backgroundColor:
+                                                            Colors.black,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
                                         ),
                                       ),
                                     ],
                                   ),
-                                  Column(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Container(
-                                        width: 600,
-                                        height: 920,
-                                        color: Colors.grey[300],
-                                        child: const Placeholder(
-                                            color: Colors.green),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(
-                                            top:
-                                                64), // Espaçamento entre os elementos
-                                        child: Container(
-                                          width: 600,
-                                          height: 435,
-                                          color: Colors.grey[300],
-                                          child: const Placeholder(
-                                              color: Colors.orange),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                            )),
-                      )),
+                                ),
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                   const Padding(
                     padding: EdgeInsets.fromLTRB(158, 88, 0, 0),
                     child: Text(
@@ -301,6 +319,39 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                   ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 110),
+                    child: Expanded(
+                        child: Column(
+                      children: [
+                        Container(
+                          color: Colors.amberAccent,
+                          height: 526,
+                          child: Placeholder(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    alignment: Alignment.bottomRight,
+                                    padding:
+                                        EdgeInsets.only(bottom: 30, right: 100),
+                                    child: const Text(
+                                      'Elemento',
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          backgroundColor: Colors.black),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    )),
+                  ),
                   const Padding(
                     padding: EdgeInsets.fromLTRB(108, 88, 0, 0),
                     child: Text(
@@ -313,7 +364,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsets.only(left: 108, right: 108, top: 58),
+                        const EdgeInsets.only(left: 108, right: 108, top: 38),
                     child: Row(
                       children: <Widget>[
                         Expanded(
@@ -333,7 +384,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         Expanded(
                                           child: Container(
                                             color: Colors.blue,
-                                            child: Center(
+                                            child: const Center(
                                               child: Text(
                                                 'Coluna 1 (Dobro)',
                                                 style: TextStyle(
@@ -346,6 +397,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                   ),
                                   Expanded(
+                                    flex: 1,
                                     child: Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.stretch,
@@ -353,7 +405,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         Expanded(
                                           child: Container(
                                             color: Colors.green,
-                                            child: Center(
+                                            child: const Center(
                                               child: Text(
                                                 'Coluna 2',
                                                 style: TextStyle(
@@ -365,7 +417,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         Expanded(
                                           child: Container(
                                             color: Colors.orange,
-                                            child: Center(
+                                            child: const Center(
                                               child: Text(
                                                 'Coluna 2',
                                                 style: TextStyle(
@@ -378,6 +430,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                   ),
                                   Expanded(
+                                    flex: 1,
                                     child: Column(
                                       crossAxisAlignment:
                                           CrossAxisAlignment.stretch,
@@ -385,7 +438,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         Expanded(
                                           child: Container(
                                             color: Colors.cyan,
-                                            child: Center(
+                                            child: const Center(
                                               child: Text(
                                                 'Coluna 3',
                                                 style: TextStyle(
@@ -397,7 +450,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         Expanded(
                                           child: Container(
                                             color: Colors.purple,
-                                            child: Center(
+                                            child: const Center(
                                               child: Text(
                                                 'Coluna 3',
                                                 style: TextStyle(
