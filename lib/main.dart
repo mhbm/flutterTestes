@@ -242,6 +242,76 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ],
                                   ),
                                 ),
+                                SizedBox(width: 20),
+                                Expanded(
+                                    flex: 1,
+                                    child: Column(
+                                      children: [
+                                        Expanded(
+                                          flex: 2,
+                                          child: Column(
+                                            children: [
+                                              Expanded(
+                                                child: Container(
+                                                  color: Colors.red,
+                                                  child: Expanded(
+                                                    child: Container(
+                                                      alignment:
+                                                          Alignment.bottomRight,
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                        bottom: 30,
+                                                        right: 100,
+                                                      ),
+                                                      child: const Text(
+                                                        'Elemento',
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          backgroundColor:
+                                                              Colors.black,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        SizedBox(height: 180),
+                                        Expanded(
+                                          flex: 1,
+                                          child: Column(
+                                            children: [
+                                              Expanded(
+                                                child: Container(
+                                                  color: Colors.yellow,
+                                                  child: Expanded(
+                                                    child: Container(
+                                                      alignment:
+                                                          Alignment.bottomRight,
+                                                      padding:
+                                                          const EdgeInsets.only(
+                                                        bottom: 30,
+                                                        right: 100,
+                                                      ),
+                                                      child: const Text(
+                                                        'Elemento',
+                                                        style: TextStyle(
+                                                          color: Colors.white,
+                                                          backgroundColor:
+                                                              Colors.black,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    )),
                               ],
                             ),
                           ),
