@@ -31,6 +31,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  static const double paddingLeft = 108;
+  static const double paddingRight = 80;
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -106,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       padding: const EdgeInsets.only(top: 69),
                       child: Expanded(
                         child: Container(
-                          margin: const EdgeInsets.only(left: 108, right: 148),
+                          margin: const EdgeInsets.only(left: 108, right: paddingRight),
                           height: 546,
                           color: Colors.white,
                           child: Row(
@@ -151,7 +154,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       )),
                   const Padding(
-                    padding: EdgeInsets.only(left: 108, top: 88),
+                    padding: EdgeInsets.only(left: paddingLeft, top: 88),
                     child: Text(
                       "Collection",
                       style: TextStyle(
@@ -161,8 +164,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        const EdgeInsets.only(top: 69, left: 108, right: 148),
+                    padding: const EdgeInsets.only(
+                        top: 69, left: paddingLeft, right: paddingRight),
                     child: Row(
                       children: [
                         Expanded(
@@ -320,7 +323,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   const Padding(
-                    padding: EdgeInsets.fromLTRB(158, 88, 0, 0),
+                    padding: EdgeInsets.fromLTRB(paddingLeft, 88, 0, 0),
                     child: Text(
                       "Modiweek",
                       style: TextStyle(
@@ -330,65 +333,26 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(158, 28, 0, 0),
-                    child: Row(
-                      children: [
-                        Container(
-                          width: 1228,
-                          height: 493,
-                          color: Colors.grey[500],
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                      padding:
+                          const EdgeInsets.fromLTRB(paddingLeft, 28, paddingRight, 0),
+                      child: Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Expanded(
-                                child: Row(
-                                  children: [
-                                    Container(
-                                      width: 280,
-                                      height: 493,
-                                      color: Colors.grey[300],
-                                      child: const Placeholder(
-                                          color: Colors.amber),
-                                    ),
-                                    const SizedBox(
-                                        width:
-                                            30), // Espaçamento entre os elementos
-                                    Container(
-                                      width: 280,
-                                      height: 493,
-                                      color: Colors.grey[300],
-                                      child: const Placeholder(
-                                          color: Colors.amber),
-                                    ),
-                                    const SizedBox(
-                                        width:
-                                            30), // Espaçamento entre os elementos
-                                    Container(
-                                      width: 280,
-                                      height: 493,
-                                      color: Colors.grey[300],
-                                      child: const Placeholder(
-                                          color: Colors.amber),
-                                    ),
-                                    const SizedBox(
-                                        width:
-                                            30), // Espaçamento entre os elementos
-                                    Container(
-                                      width: 280,
-                                      height: 493,
-                                      color: Colors.grey[300],
-                                      child: const Placeholder(
-                                          color: Colors.amber),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                              Container(
+                                color: Colors.white,
+                                height: 493,
+                                child: Row(children: [
+                                  Expanded(flex: 1, child: Placeholder()),
+                                  Expanded(flex: 1, child: Placeholder()),
+                                  Expanded(flex: 1, child: Placeholder()),
+                                  Expanded(flex: 1, child: Placeholder()),
+                                  Expanded(flex: 1, child: Placeholder()),
+
+                                ],)
+                              )
+                            ]),
+                      )),
                   Padding(
                     padding: EdgeInsets.only(top: 110),
                     child: Expanded(
@@ -423,7 +387,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     )),
                   ),
                   const Padding(
-                    padding: EdgeInsets.fromLTRB(108, 88, 0, 0),
+                    padding: EdgeInsets.fromLTRB(paddingLeft, 88, 0, 0),
                     child: Text(
                       "Follow US @Modimal",
                       style: TextStyle(
@@ -433,8 +397,8 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        const EdgeInsets.only(left: 108, right: 108, top: 38),
+                    padding: const EdgeInsets.only(
+                        left: paddingLeft, right: paddingRight, top: 38),
                     child: Row(
                       children: <Widget>[
                         Expanded(
