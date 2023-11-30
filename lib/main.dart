@@ -359,33 +359,37 @@ class _MyHomePageState extends State<MyHomePage> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        Container(
-                                          height: 426,
-                                          color: Colors.cyan[700],
-                                          child: Row(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Expanded(
-                                                child: Container(),
-                                              ), // Para ocupar todo o espaço restante
-                                              Padding(
-                                                padding: const EdgeInsets.only(
-                                                    right: 20, top: 20),
-                                                child: Container(
-                                                  width: 20,
-                                                  height: 20,
-                                                  color: Colors
-                                                      .red, // Cor do quadrado de 20x20
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Container(
+                                            height: 426,
+                                            color: Colors.cyan[700],
+                                            child: Row(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Expanded(
+                                                  child: Container(),
+                                                ), // Para ocupar todo o espaço restante
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          right: 20, top: 20),
+                                                  child: Container(
+                                                    width: 20,
+                                                    height: 20,
+                                                    color: Colors
+                                                        .red, // Cor do quadrado de 20x20
+                                                  ),
                                                 ),
-                                              ),
-                                              // Outros elementos da linha
-                                            ],
+                                                // Outros elementos da linha
+                                              ],
+                                            ),
                                           ),
                                         ),
                                         const Padding(
                                           padding: EdgeInsets.only(
-                                              left: 20, top: 20),
+                                              left: 20, top: 10),
                                           child: Text(
                                             "Sunday",
                                             textAlign: TextAlign.left,
@@ -401,33 +405,37 @@ class _MyHomePageState extends State<MyHomePage> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        Container(
-                                          height: 426,
-                                          color: Colors.cyan[500],
-                                          child: Row(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Expanded(
-                                                child: Container(),
-                                              ), // Para ocupar todo o espaço restante
-                                              Padding(
-                                                padding: const EdgeInsets.only(
-                                                    right: 20, top: 20),
-                                                child: Container(
-                                                  width: 20,
-                                                  height: 20,
-                                                  color: Colors
-                                                      .red, // Cor do quadrado de 20x20
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Container(
+                                            height: 426,
+                                            color: Colors.cyan[500],
+                                            child: Row(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Expanded(
+                                                  child: Container(),
+                                                ), // Para ocupar todo o espaço restante
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          right: 20, top: 20),
+                                                  child: Container(
+                                                    width: 20,
+                                                    height: 20,
+                                                    color: Colors
+                                                        .red, // Cor do quadrado de 20x20
+                                                  ),
                                                 ),
-                                              ),
-                                              // Outros elementos da linha
-                                            ],
+                                                // Outros elementos da linha
+                                              ],
+                                            ),
                                           ),
                                         ),
                                         const Padding(
                                           padding: EdgeInsets.only(
-                                              left: 20, top: 20),
+                                              left: 20, top: 10),
                                           child: Text(
                                             "Monday",
                                             textAlign: TextAlign.left,
@@ -443,33 +451,37 @@ class _MyHomePageState extends State<MyHomePage> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        Container(
-                                          height: 426,
-                                          color: Colors.cyan[300],
-                                          child: Row(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Expanded(
-                                                child: Container(),
-                                              ), // Para ocupar todo o espaço restante
-                                              Padding(
-                                                padding: const EdgeInsets.only(
-                                                    right: 20, top: 20),
-                                                child: Container(
-                                                  width: 20,
-                                                  height: 20,
-                                                  color: Colors
-                                                      .red, // Cor do quadrado de 20x20
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Container(
+                                            height: 426,
+                                            color: Colors.cyan[300],
+                                            child: Row(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Expanded(
+                                                  child: Container(),
+                                                ), // Para ocupar todo o espaço restante
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          right: 20, top: 20),
+                                                  child: Container(
+                                                    width: 20,
+                                                    height: 20,
+                                                    color: Colors
+                                                        .red, // Cor do quadrado de 20x20
+                                                  ),
                                                 ),
-                                              ),
-                                              // Outros elementos da linha
-                                            ],
+                                                // Outros elementos da linha
+                                              ],
+                                            ),
                                           ),
                                         ),
                                         const Padding(
                                           padding: EdgeInsets.only(
-                                              left: 20, top: 20),
+                                              left: 20, top: 10),
                                           child: Text(
                                             "Tuesday",
                                             textAlign: TextAlign.left,
@@ -485,33 +497,37 @@ class _MyHomePageState extends State<MyHomePage> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        Container(
-                                          height: 426,
-                                          color: Colors.cyan[100],
-                                          child: Row(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Expanded(
-                                                child: Container(),
-                                              ), // Para ocupar todo o espaço restante
-                                              Padding(
-                                                padding: const EdgeInsets.only(
-                                                    right: 20, top: 20),
-                                                child: Container(
-                                                  width: 20,
-                                                  height: 20,
-                                                  color: Colors
-                                                      .red, // Cor do quadrado de 20x20
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Container(
+                                            height: 426,
+                                            color: Colors.cyan[100],
+                                            child: Row(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Expanded(
+                                                  child: Container(),
+                                                ), // Para ocupar todo o espaço restante
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          right: 20, top: 20),
+                                                  child: Container(
+                                                    width: 20,
+                                                    height: 20,
+                                                    color: Colors
+                                                        .red, // Cor do quadrado de 20x20
+                                                  ),
                                                 ),
-                                              ),
-                                              // Outros elementos da linha
-                                            ],
+                                                // Outros elementos da linha
+                                              ],
+                                            ),
                                           ),
                                         ),
                                         const Padding(
                                           padding: EdgeInsets.only(
-                                              left: 20, top: 20),
+                                              left: 20, top: 10),
                                           child: Text(
                                             "Wednesday",
                                             textAlign: TextAlign.left,
@@ -527,33 +543,37 @@ class _MyHomePageState extends State<MyHomePage> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        Container(
-                                          height: 426,
-                                          color: Colors.cyan[050],
-                                          child: Row(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Expanded(
-                                                child: Container(),
-                                              ), // Para ocupar todo o espaço restante
-                                              Padding(
-                                                padding: const EdgeInsets.only(
-                                                    right: 20, top: 20),
-                                                child: Container(
-                                                  width: 20,
-                                                  height: 20,
-                                                  color: Colors
-                                                      .red, // Cor do quadrado de 20x20
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Container(
+                                            height: 426,
+                                            color: Colors.cyan[050],
+                                            child: Row(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Expanded(
+                                                    child:
+                                                        Container()), // Para ocupar todo o espaço restante
+                                                Padding(
+                                                  padding:
+                                                      const EdgeInsets.only(
+                                                          right: 20, top: 20),
+                                                  child: Container(
+                                                    width: 20,
+                                                    height: 20,
+                                                    color: Colors
+                                                        .red, // Cor do quadrado de 20x20
+                                                  ),
                                                 ),
-                                              ),
-                                              // Outros elementos da linha
-                                            ],
+                                                // Outros elementos da linha
+                                              ],
+                                            ),
                                           ),
                                         ),
                                         const Padding(
                                           padding: EdgeInsets.only(
-                                              left: 20, top: 20),
+                                              left: 20, top: 10),
                                           child: Text(
                                             "Thursday",
                                             textAlign: TextAlign.left,
