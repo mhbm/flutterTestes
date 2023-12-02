@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
 
-    if (screenSize.width < 600) {
+    if (screenSize.width < 736) {
       return MobileContent();
     } else {
       return DesktopContent();

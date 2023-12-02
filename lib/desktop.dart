@@ -11,7 +11,7 @@ class DesktopContent extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Tela de testes22 do Figma'),
+          title: const Text('Tela de testes do Figma'),
         ),
         backgroundColor: Colors.grey[800],
         body: ListView(
