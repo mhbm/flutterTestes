@@ -72,8 +72,9 @@ class MobileContent extends StatelessWidget {
                     child: Container(
                       height: 551,
                       color: Colors.red,
-                      child: Row(children: [
-                        Column(
+                      child: Row(
+                        children: [
+                          Column(
                             mainAxisAlignment: MainAxisAlignment.end,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -88,18 +89,20 @@ class MobileContent extends StatelessWidget {
                                     Text("Texto 2", textAlign: TextAlign.left),
                               ),
                               Padding(
-                                  padding:
-                                      EdgeInsets.only(left: 20, bottom: 20),
-                                  child: Expanded(
-                                    child: Container(
-                                      height: 40,
-                                      width: 68,
-                                      color: Colors.blueAccent,
-                                      child: Placeholder(),
-                                    ),
-                                  )),
-                            ]),
-                      ]),
+                                padding: EdgeInsets.only(left: 20, bottom: 20),
+                                child: Expanded(
+                                  child: Container(
+                                    height: 40,
+                                    width: 68,
+                                    color: Colors.blueAccent,
+                                    child: Placeholder(),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -357,6 +360,131 @@ class MobileContent extends StatelessWidget {
                     ],
                   ),
                 ),
+                Padding(
+                  padding: EdgeInsets.only(top: 20, left: 20, right: 20),
+                  child: Container(
+                    height: 523,
+                    color: Colors.deepOrange,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: Column(
+                            children: [
+                              Expanded(
+                                flex: 1,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Expanded(
+                                      child: Container(
+                                        color: Colors.blue[900],
+                                      ),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.only(
+                                            left: 20,
+                                            top: 4,
+                                          ),
+                                          child: Text("Blouses"),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 2,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Expanded(
+                                      child: Container(
+                                        color: Colors.blue[600],
+                                      ),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.only(
+                                            left: 20,
+                                            top: 4,
+                                          ),
+                                          child: Text("Dresses"),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        Expanded(
+                          flex: 1,
+                          child: Column(
+                            children: [
+                              Expanded(
+                                flex: 2,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Expanded(
+                                      child: Container(
+                                        color: Colors.blue[900],
+                                      ),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.only(
+                                            left: 20,
+                                            top: 4,
+                                          ),
+                                          child: Text("Pants"),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 1,
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  children: [
+                                    Expanded(
+                                      child: Container(
+                                        color: Colors.blue[600],
+                                      ),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.only(
+                                            left: 20,
+                                            top: 4,
+                                          ),
+                                          child: Text("Outwears"),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
                 const Padding(
                   padding: EdgeInsets.only(top: 20, left: 20),
                   child: Row(
@@ -408,8 +536,7 @@ class MobileContent extends StatelessWidget {
                                               MainAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding:
-                                                  EdgeInsets.all(4.0),
+                                              padding: EdgeInsets.all(4.0),
                                               child: Text(
                                                 "Sunday",
                                               ),
@@ -456,8 +583,7 @@ class MobileContent extends StatelessWidget {
                                               MainAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding:
-                                                  EdgeInsets.all(4.0),
+                                              padding: EdgeInsets.all(4.0),
                                               child: Text(
                                                 "Monday",
                                               ),
