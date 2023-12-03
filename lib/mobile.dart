@@ -642,10 +642,102 @@ class MobileContent extends StatelessWidget {
                     ],
                   ),
                 ),
-                Expanded(
+                Padding(
+                  padding: EdgeInsets.only(top: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: Container(
+                          height: 408,
+                          color: Colors.teal[300],
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.end,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              const Padding(
+                                padding: EdgeInsets.all(30),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Expanded(
+                                      child: Text(
+                                        "Stylish sustainability in clothing promotes eco-friendly choices for a greater future",
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.only(right: 20, bottom: 20),
+                                child: Container(
+                                  color: Colors.orange[600],
+                                  child: Text("Sustainability"),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 20, left: 20, right: 20),
                   child: Container(
-                    height: 1551,
-                    color: Colors.yellow,
+                    height: 388,
+                    color: Colors.lime[300],
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Expanded(
+                          flex: 1,
+                          child: Column(
+                            children: [
+                              Expanded(
+                                flex: 1,
+                                child: Container(
+                                  color: Colors.lime[100],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 1,
+                                child: Container(
+                                  color: Colors.lime[300],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Expanded(
+                          flex: 1,
+                          child: Column(
+                            children: [
+                              Expanded(
+                                flex: 1,
+                                child: Container(
+                                  color: Colors.lime[500],
+                                ),
+                              ),
+                              Expanded(
+                                flex: 1,
+                                child: Container(
+                                  color: Colors.lime[900],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const Expanded(
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 20),
+                    child: Expanded(
+                      child: Placeholder(),
+                    ),
                   ),
                 ),
               ],
