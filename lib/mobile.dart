@@ -209,7 +209,9 @@ class MobileContent extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(width: 20,),
+                            SizedBox(
+                              width: 20,
+                            ),
                             Expanded(
                               flex: 1,
                               child: Container(
@@ -298,6 +300,46 @@ class MobileContent extends StatelessWidget {
                               ),
                             ),
                           ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 30),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(4.0),
+                        child: Container(
+                          height: 20,
+                          width: 20,
+                          color: Colors.blue[900],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(4.0),
+                        child: Container(
+                          height: 20,
+                          width: 20,
+                          color: Colors.blue[300],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(4.0),
+                        child: Container(
+                          height: 20,
+                          width: 20,
+                          color: Colors.blue[900],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(4.0),
+                        child: Container(
+                          height: 20,
+                          width: 20,
+                          color: Colors.blue[900],
                         ),
                       ),
                     ],
